@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    background-color: teal;
+    font-size: 25px;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+    border: 5px solid black;
+    padding: 20px;
+
+}
+
