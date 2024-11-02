@@ -1,0 +1,666 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+input, textarea{
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: left;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 77px;
+    align-items: center;
+    padding: 0 28px;
+    box-sizing: border-box;
+}
+
+.menu-item {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.menu-item i {
+    padding-left: 4px;
+}
+
+#navRight {
+    box-sizing: border-box;
+}
+
+#dropdown {
+    border-top: 2px solid rgb(170, 210, 54);
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    display: none;
+    position: absolute;
+    padding: 20px;
+    right: 24px;
+    width: 150px;
+}
+
+#dropdown span {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 4px;
+}
+
+.dropdown-wrapper:hover #dropdown {
+    display: block;
+}
+
+.dropdown-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+#logo {
+    width: 40px;
+}
+
+.buy-now {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    border-radius: 4px;
+    border: 0;
+    margin-right: 16px;
+    height: 32px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section {
+    display: block;
+}
+
+
+main {
+    display: block;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+}
+
+#mainWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#mainWrapper h1 {
+    margin: 0;
+    max-width: 1100px;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+}
+
+#mainWrapper p {
+    text-align: center;
+    max-width: 1100px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    padding-top: 32px;
+    color: #8b8b99;
+}
+
+#section2 {
+    display: flex;
+    width: 100%;
+    justify-content: stretch;
+}
+
+#step1 {
+    background-color: #5acda6;
+}
+
+#step2 {
+    background-color: #91ac41;
+}
+
+#step3 {
+    background-color: #e4b476;
+}
+
+#step4 {
+    background-color: #f69dad;
+}
+
+.step-item h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.step-item p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+
+.step-item i {
+    font-size: 96px;
+    
+}
+
+.step-item:hover i {
+    animation: zoom 0.3s forwards;
+}
+
+.step-item {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 112px 48px;
+    text-align: center;
+    color: white;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+#section3 {
+    background-color: #f7eee2;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 75px 0;
+}
+
+.fresh {
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+#section3 > h3, #section4 > h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+#section3 > p:last-of-type,
+#section4 > p:last-of-type {
+    position: relative;
+    margin: 0;
+    margin-bottom: 55px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+
+#imgContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
+.sec3card {
+    width: 25%;
+    padding: 24px;
+    text-align: center;
+}
+
+.sec3card:hover i {
+    animation: zoom 0.3s forwards 0.5;
+}
+
+.sec3card i {
+    background-color: #e3b375;
+    font-size: 60px;
+    border-radius: 50%;
+    padding: 40px;
+    color: white;
+}
+
+.sec3card h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sec3card p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+}
+
+#testim {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.opFace {
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 25px;
+}
+
+.opinion p:first-of-type {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    color: #8b8b99;
+    margin: 0;
+}
+
+.opinion h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.author {
+    font-size: 12px;
+    color: #8b8b99;
+    font-style: italic;
+}
+
+#section4 {
+    text-align: center;
+    padding: 75px;
+}
+.opinion {
+    text-align: center;
+    width: 25%;
+    background-color: #f5f6fb;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    padding: 40px 30px;
+    margin: 16px;
+    transition: box-shadow 0.3s;
+}
+
+.opinion:hover {
+    box-shadow: 0 12px 16px 0 rgba(39, 39, 47, 0.06)
+}
+
+#section4 > p:last-of-type {
+    max-width: 700px;
+    margin: 0 auto 55px auto;
+}
+
+.opinion h3 {
+    margin: 24px 0 0 0;
+}
+
+.opinion p:last-of-type {
+    margin: 0;
+}
+
+#section5 {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+
+
+#leftImgSub {
+    width: 67%;
+    display: inline-block;
+    margin: 0;
+}
+
+#leftImgSub img {
+    width: 100%;
+}
+
+#sec5right {
+    width: 33.33%;
+    margin: 0;
+    background-position: left;
+    background-size: cover;
+    display: inline-block;
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+}
+
+#wrapper5 {
+    margin: 115px;
+}
+
+#wrapper5 h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+#wrapper5 p {
+    color: #8b8b99;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#email5 {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: white;
+    padding: 12px;
+    color: #8b8b99;
+    font-size: 16px;
+    margin-top: 60px;
+    display: block;
+    text-transform: uppercase;
+}
+
+#wrapper5 button {
+    background-color: #f69dad;
+    border: 0;
+    padding: 16px 42px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#wrapper5 button:hover {
+    border: #f69dad solid 1px;
+    color: #f69dad;
+    background-color: transparent;
+}
+
+#section6 {
+    width: 100%;
+    background-color: #f6fcfa;
+}
+
+#sec6wrapper {
+    width: 100%;
+    text-align: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: stretch;
+}
+
+.statCard {
+    padding: 0 60px;
+    width: 25%;
+}
+
+.statCard h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.statCard p {
+    color: #57e3b5;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+#section7 > div {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+#sec7line {
+    background-color: #e4b476;
+    height: 1px;
+    width: 96px;
+    display: inline-block;
+    margin-bottom: 36px;
+}
+
+#section7 h3 {
+    color: #8b8b99;
+    font-size: 44px;
+    font-weight: 400;
+}
+
+#section7 iframe {
+    width: 100%;
+    height: 425px;
+}
+
+#wrapper8 {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#left8 {
+    width: 50%;
+}
+
+.green8 {
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.h38 {
+    font-size: 44px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.p28, .addP {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+
+.addH {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 32px;
+}
+
+.addP {
+    line-height: 2;
+    margin: 0;
+}
+
+#right8 {
+    width: 40%;
+}
+
+.inp8 {
+    font-size: 16px;
+    border: #e5e6ec solid 1px;
+    padding: 16px;
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    color: #8b8b99;
+}
+
+.btn8 {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    border-radius: 4px;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #232323;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+@media (max-width:900px) {
+
+    html,body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    nav {
+        padding: 0 28px;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .buy-now {
+        margin: 0;
+    }
+
+    #mainWrapper h1 {
+        font-size: 28px;
+    }
+
+    #mainWrapper p {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    #section2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .step-item {
+        width: 100%;
+    }
+
+
+    #section3 {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    #section3>h3 {
+        font-size: 28px;
+    }
+
+    #imgContainer {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .sec3card {
+        width: 100%;
+    }
+
+    #section4 {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    #section4>h3 {
+        font-size: 28px;
+    }
+
+    #testim {
+        flex-direction: column;
+    }
+
+    .opinion {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #section5 {
+        flex-direction: column;
+    }
+
+    #leftImgSub,#sec5right {
+        width: 100%;
+    }
+
+    #wrapper5 {
+        margin: 16px;
+    }
+
+    #wrapper5 h3 {
+        font-size: 28px;
+    }
+
+    #sec6wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #wrapper8 {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 16px;
+        padding-top: 0;
+        box-sizing: border-box;
+    }
+
+    #left8,#right8 {
+        width: 100%;
+    }
+
+    #section8 form {
+        margin: 0;
+    }
+}

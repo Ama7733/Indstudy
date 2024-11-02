@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray; /* Set background color to gray */
+}
+
+nav {
+    background-color: #333;
+    padding: 15px;
+    display: flex; /* Change to flex to position items */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items in the nav for desktop */
+    position: relative; /* Needed for absolute positioning */
+}
+
+.logo {
+    margin-right: 20px; /* Add some spacing to the right */
+}
+
+.hamburger {
+    display: none; /* Initially hidden */
+}
+
+nav .nav-links {
+    display: flex; /* Keep it as flex for desktop */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px; /* Center spacing */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Hero styles */
+.hero {
+    position: relative;
+    height: 60vh;
+    background-image: url('https://source.unsplash.com/1600x900/?3d-art'); /* Placeholder for hero image */
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -15px; /* Adjust this value as needed to move it up */
+}
+
+/* Carousel styles */
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    max-width: 100%;
+    display: block;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Grid styles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+.project-title {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Responsive styles */
+/* Existing styles... */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger icon */
+        position: absolute; /* Position it absolutely */
+        left: 20px; /* Distance from the left */
+        top: 0px; /* Adjust top positioning if needed */
+        font-size: 50px; /* Increase font size for the hamburger icon */
+        padding: px; /* Add padding for a larger click area */
+        color: white; /* Change color to match the navbar */
+        cursor: pointer; /* Change cursor to pointer for better UX */
+        z-index: 1; /* Ensure it's above other elements */
+    }
+
+    nav {
+        justify-content: flex-start; /* Align items to the left on mobile */
+        padding: 40px; /* Increase padding for a taller navbar */
+    }
+
+    .logo {
+        position: absolute; /* Position relative to the nav */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Offset by half its width */
+        font-size: 24px; /* Increase logo size if needed */
+    }
+
+    nav .nav-links {
+        display: none; /* Hide nav links by default */
+        width: 100%; /* Full width */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        position: absolute; /* Position below the nav bar */
+        top: 60px; /* Adjust based on nav height */
+        left: 0;
+        background-color: #333; /* Background color */
+        z-index: 1; /* Ensure it is above other content */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items */
+        padding: 0; /* Remove padding */
+        width: 100%; /* Full width for items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between items */
+    }
+
+    nav ul li a {
+        width: 100%; /* Full width links */
+        text-align: center; /* Center text */
+        font-size: 18px; /* Increase font size for links */
+        padding: 10px; /* Add padding for larger click area */
+    }
+}
