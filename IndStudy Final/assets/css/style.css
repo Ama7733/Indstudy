@@ -2,28 +2,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: gray; /* Set background color to gray */
+    background-color: gray; 
 }
 
 nav {
     background-color: #333;
     padding: 15px;
-    display: flex; /* Change to flex to position items */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items in the nav for desktop */
-    position: relative; /* Needed for absolute positioning */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    position: relative; 
 }
 
 .logo {
-    margin-right: 20px; /* Add some spacing to the right */
+    margin-right: 20px; 
 }
 
 .hamburger {
-    display: none; /* Initially hidden */
+    display: none; 
 }
 
 nav .nav-links {
-    display: flex; /* Keep it as flex for desktop */
+    display: flex; 
 }
 
 nav ul {
@@ -34,7 +34,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px; /* Center spacing */
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -58,11 +58,11 @@ footer {
     width: 100%;
 }
 
-/* Hero styles */
+/* Hero styles related section */
 .hero {
     position: relative;
     height: 60vh;
-    background-image: url('https://source.unsplash.com/1600x900/?3d-art'); /* Placeholder for hero image */
+    background-image: url('https://source.unsplash.com/1600x900/?3d-art'); 
     background-size: cover;
     color: white;
     display: flex;
@@ -70,10 +70,10 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: -15px; /* Adjust this value as needed to move it up */
+    margin-top: -15px; 
 }
 
-/* Carousel styles */
+                               /* everything below here is carousel edits */
 .carousel {
     position: relative;
     max-width: 600px;
@@ -133,57 +133,57 @@ footer {
 /* Responsive styles */
 /* Existing styles... */
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* everything below is for the hamburger menu on mobile*/
     .hamburger {
-        display: block; /* Show hamburger icon */
-        position: absolute; /* Position it absolutely */
-        left: 20px; /* Distance from the left */
-        top: 0px; /* Adjust top positioning if needed */
-        font-size: 50px; /* Increase font size for the hamburger icon */
-        padding: px; /* Add padding for a larger click area */
-        color: white; /* Change color to match the navbar */
-        cursor: pointer; /* Change cursor to pointer for better UX */
-        z-index: 1; /* Ensure it's above other elements */
+        display: block; 
+        position: absolute;
+        left: 20px; 
+        top: 0px; 
+        font-size: 50px; 
+        padding: px; 
+        color: white; 
+        cursor: pointer; 
+        z-index: 1; 
     }
 
     nav {
-        justify-content: flex-start; /* Align items to the left on mobile */
-        padding: 40px; /* Increase padding for a taller navbar */
+        justify-content: flex-start; 
+        padding: 40px;
     }
 
     .logo {
-        position: absolute; /* Position relative to the nav */
-        left: 50%; /* Center horizontally */
-        transform: translateX(-50%); /* Offset by half its width */
-        font-size: 24px; /* Increase logo size if needed */
+        position: absolute; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        font-size: 24px; 
     }
 
     nav .nav-links {
-        display: none; /* Hide nav links by default */
-        width: 100%; /* Full width */
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-        position: absolute; /* Position below the nav bar */
-        top: 60px; /* Adjust based on nav height */
+        display: none; 
+        width: 100%; 
+        flex-direction: column; 
+        align-items: center; 
+        position: absolute;
+        top: 60px; 
         left: 0;
-        background-color: #333; /* Background color */
-        z-index: 1; /* Ensure it is above other content */
+        background-color: #333; 
+        z-index: 1; 
     }
 
     nav ul {
-        flex-direction: column; /* Stack nav items */
-        padding: 0; /* Remove padding */
-        width: 100%; /* Full width for items */
+        flex-direction: column; 
+        padding: 0; 
+        width: 100%; 
     }
 
     nav ul li {
-        margin: 10px 0; /* Space between items */
+        margin: 10px 0; 
     }
 
     nav ul li a {
-        width: 100%; /* Full width links */
-        text-align: center; /* Center text */
-        font-size: 18px; /* Increase font size for links */
-        padding: 10px; /* Add padding for larger click area */
+        width: 100%; 
+        text-align: center; 
+        font-size: 18px; 
+        padding: 10px; 
     }
 }
