@@ -7,7 +7,7 @@ body {
     color: #333;
     line-height: 1.6;
     background-image: url(../img/VRChat_2023-05-14_00-19-27.362_1920x1080\ \(1\)\ \(1\).jpg);
-    background-size: cover;  /* Make sure the background image covers the page */
+    background-size: cover;  
     background-position: center;
 }
 
@@ -17,8 +17,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px; /* Ensure the nav has a fixed height */
-    position: relative; /* Required for z-index positioning */
+    height: 60px; 
+    position: relative;
 }
 
 nav ul {
@@ -50,15 +50,15 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Hamburger Menu Styles */
+
 .hamburger {
-    display: none; /* Hidden by default */
+    display: none; 
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
     height: 21px;
     cursor: pointer;
-    z-index: 1001; /* Ensure it's above the nav */
+    z-index: 1001;
 }
 
 .hamburger span {
@@ -67,19 +67,19 @@ nav ul li a:hover {
     background-color: white;
 }
 
-/* Show hamburger menu on mobile */
+
 @media (max-width: 768px) {
     nav ul {
-        display: none; /* Hide menu by default */
+        display: none;
         width: 100%;
         flex-direction: column;
         text-align: center;
         background-color: #333;
         padding: 15px 0;
         position: absolute;
-        top: 60px; /* Position below the navbar */
+        top: 60px;
         left: 0;
-        z-index: 1000; /* Ensure menu stays below the hamburger */
+        z-index: 1000; 
     }
 
     nav ul li {
@@ -87,11 +87,11 @@ nav ul li a:hover {
     }
 
     .hamburger {
-        display: flex; /* Show hamburger */
+        display: flex; 
     }
 
     nav ul.active {
-        display: flex; /* Show menu when active */
+        display: flex; 
     }
 }
 
@@ -100,8 +100,8 @@ nav ul li a:hover {
 h1 {
     text-align: center;
     margin-top: 50px;
-    color: white; /* Make sure header is visible */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Add shadow for better contrast */
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
 }
 
 .contact-container {
@@ -173,7 +173,7 @@ form button:hover {
 .social-icon:hover {
     color: #007BFF;
 }
-/* Ensure Footer Sticks to Bottom */
+
 body {
     display: flex;
     flex-direction: column;
@@ -189,7 +189,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: auto;  /* Push footer to the bottom */
+    margin-top: auto;  
 }
 
 footer .footer-social-links {
@@ -220,24 +220,24 @@ footer .footer-social-links a:hover {
         font-size: 14px;
     }
 
-        /* Logo size for large screens */
+       
         .logo {
-            width: 150px;  /* For desktop */
+            width: 150px; 
             height: auto;
         }
     }
     
-    /* Logo size for smaller screens (tablets) */
+   
     @media (max-width: 768px) {
         .logo {
-            width: 120px; /* Adjust for your design */
+            width: 120px; 
         }
     }
     
-    /* Logo size for very small screens (mobile) */
+  
     @media (max-width: 480px) {
         .logo {
-            width: 100px; /* Adjust for mobile */
+            width: 100px; 
         }
     }
 

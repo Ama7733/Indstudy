@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: gray; /* Set background color to gray */
+    background-color: gray; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -12,8 +12,8 @@ body {
 /* Navigation Bar */
 nav {
     display: flex;
-    justify-content: center; /* Centers the nav items horizontally */
-    align-items: center; /* Aligns the items vertically */
+    justify-content: center; 
+    align-items: center; 
     background-color: #333;
     padding: 10px 20px;
     height: 40px;
@@ -27,7 +27,7 @@ nav {
 }
 
 .nav-links li {
-    margin-right: 20px; /* Space between nav items */
+    margin-right: 20px; 
 }
 
 .nav-links li a {
@@ -44,7 +44,7 @@ nav {
 
 /* Hamburger Menu */
 .hamburger {
-    display: none; /* Hide hamburger menu by default */
+    display: none; 
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
@@ -65,13 +65,13 @@ nav {
 }
 
 .logo {
-    width: 120px; /* Adjust the logo size as needed */
+    width: 120px; 
     height: auto;
 }
 /* Media Query for Mobile */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Hide the links on mobile */
+        display: none; 
         width: 100%;
         position: absolute;
         top: 60px;
@@ -87,38 +87,38 @@ nav {
     }
 
     .hamburger {
-        display: flex; /* Show the hamburger on mobile */
+        display: flex; 
     }
 
     .nav-links.active {
-        display: flex; /* Show the links when hamburger is clicked */
+        display: flex; 
     }
 
-    /* Logo size for large screens */
+
     .logo {
-        width: 150px;  /* For desktop */
+        width: 150px;  
         height: auto;
     }
 }
 
-/* Logo size for smaller screens (tablets) */
+
 @media (max-width: 768px) {
     .logo {
-        width: 120px; /* Adjust for your design */
+        width: 120px; 
     }
 }
 
-/* Logo size for very small screens (mobile) */
+
 @media (max-width: 480px) {
     .logo {
-        width: 100px; /* Adjust for mobile */
+        width: 100px; 
     }
 }
 
 
 /* Hero Section */
 .hero {
-    background-image: url('../img/VRChat_2023-05-14_00-19-27.362_1920x1080\ \(1\)\ \(1\).jpg'); /* Replace with your hero image path */
+    background-image: url('../img/VRChat_2023-05-14_00-19-27.362_1920x1080\ \(1\)\ \(1\).jpg'); 
     background-size: cover; 
     background-position: center; 
     height: 100vh;
@@ -146,5 +146,5 @@ footer {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    margin-top: auto; /* Ensures footer stays at the bottom */
+    margin-top: auto; 
 }
