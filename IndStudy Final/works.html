@@ -3,31 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Home Page</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Works</title>
+    <link rel="stylesheet" href="assets/css/works.css"> <!-- Link to the works page CSS -->
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav>
-        <div class="logo">
-            <img src="data:image/png;base64,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" alt="Logo" style="height: 40px;">
-        </div>
-        <div class="hamburger" id="hamburger" onclick="toggleMenu()">☰</div> <!-- Hamburger icon -->
-        <div class="nav-links" id="navLinks">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="comm.html">Commission</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><img src="assets/images/logo.png" alt="Logo" class="logo"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="comm.html">Commission</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
+    <h1>My Works</h1>
+
+    <div class="works-container">
+        <!-- Example project 1 -->
+        <div class="work-item">
+            <img src="assets/images/project1.jpg" alt="Project 1">
+            <div class="work-description">
+                <h3>Project Title 1</h3>
+                <p>A brief description of the project goes here. Lorem ipsum dolor sit amet.</p>
+                <a href="project-details1.html" class="work-link">View Project</a>
+            </div>
+        </div>
+
+        <!-- Example project 2 -->
+        <div class="work-item">
+            <img src="assets/images/project2.jpg" alt="Project 2">
+            <div class="work-description">
+                <h3>Project Title 2</h3>
+                <p>A brief description of the project goes here. Lorem ipsum dolor sit amet.</p>
+                <a href="project-details2.html" class="work-link">View Project</a>
+            </div>
+        </div>
+
+        <!-- Example project 3 -->
+        <div class="work-item">
+            <img src="assets/images/project3.jpg" alt="Project 3">
+            <div class="work-description">
+                <h3>Project Title 3</h3>
+                <p>A brief description of the project goes here. Lorem ipsum dolor sit amet.</p>
+                <a href="project-details3.html" class="work-link">View Project</a>
+            </div>
+        </div>
+
+        <!-- Add more works here -->
+    </div>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Your Name. All Rights Reserved.</p>
     </footer>
-
-    <script src="assets/js/script.js"></script> <!-- Link to your JavaScript file -->
-
 </body>
 </html>

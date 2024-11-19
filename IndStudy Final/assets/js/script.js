@@ -1,31 +1,7 @@
-let currentIndex = 0;
+// JavaScript to toggle the hamburger menu
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
 
-function showSlide(index) {
-    const slides = document.querySelectorAll('.carousel-images img');
-    currentIndex = (index + slides.length) % slides.length;
-    const offset = -currentIndex * 100; 
-    document.getElementById('carouselImages').style.transform = `translateX(${offset}%)`;
-}
-
-function nextSlide() {
-    showSlide(currentIndex + 1);
-}
-
-function prevSlide() {
-    showSlide(currentIndex - 1);
-}
-
-// Toggle menu visibility
-function toggleMenu() {
-    const navLinks = document.getElementById('navLinks');
-    if (navLinks.style.display === 'flex') {
-        navLinks.style.display = 'none';
-    } else {
-        navLinks.style.display = 'flex';
-    }
-}
-
-// Button click functionality
-document.getElementById('cta-button').addEventListener('click', function() {
-    window.location.href = 'contact.html'; 
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
