@@ -3,7 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: gray; /* Background color */
+    background-color: gray; 
+    background-image: url(../img/VRChat_2023-05-14_00-19-27.362_1920x1080\ \(1\)\ \(1\).jpg);
+    background-size: cover;
 }
 
 nav {
@@ -12,6 +14,9 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -19,7 +24,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center nav links */
+    justify-content: center;
 }
 
 nav ul li {
@@ -37,28 +42,49 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it's above the nav */
+}
+
+.hamburger span {
     width: 100%;
+    height: 3px;
+    background-color: white;
 }
 
-footer .social-links {
-    margin-top: 10px;
-}
+/* Show hamburger menu on mobile */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide menu by default */
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: #333;
+        padding: 15px 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+    }
 
-footer .social-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
+    nav ul li {
+        margin: 15px 0;
+    }
 
-footer .social-links a:hover {
-    color: #007BFF;
+    .hamburger {
+        display: flex; /* Show hamburger */
+    }
+
+    nav ul.active {
+        display: flex; /* Show menu when active */
+    }
 }
 
 /* Centered Content for Commission Page */
@@ -70,12 +96,12 @@ main {
 }
 
 h1 {
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 .intro-text {
-    color: #666;
+    color: #ffffff;
     font-size: 18px;
     margin-bottom: 40px;
 }
@@ -91,7 +117,7 @@ h1 {
 }
 
 h2 {
-    color: #333;
+    color: #000000;
     margin-bottom: 20px;
 }
 
@@ -146,10 +172,29 @@ h2 {
     background-color: #0056b3;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;  /* Push footer to the bottom */
+}
+
+footer .footer-social-links {
+    margin-top: 10px;
+}
+
+footer .footer-social-links a {
+    font-size: 30px;
+    color: white;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer .footer-social-links a:hover {
+    color: #007BFF;
 }

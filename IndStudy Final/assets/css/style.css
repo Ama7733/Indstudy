@@ -16,6 +16,7 @@ nav {
     align-items: center; /* Aligns the items vertically */
     background-color: #333;
     padding: 10px 20px;
+    height: 40px;
 }
 
 .nav-links {
@@ -114,13 +115,13 @@ nav {
     }
 }
 
-/* Hero Section */
+
 /* Hero Section */
 .hero {
     background-image: url('../img/VRChat_2023-05-14_00-19-27.362_1920x1080\ \(1\)\ \(1\).jpg'); /* Replace with your hero image path */
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-position: center; /* Ensures the image stays centered */
-    height: 100vh; /* Makes the hero image fill the entire viewport height */
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

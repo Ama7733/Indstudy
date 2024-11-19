@@ -1,4 +1,4 @@
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,15 +6,19 @@ body {
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
+    background-image: url(../img/VRChat_2023-05-14_00-19-27.362_1920x1080\ \(1\)\ \(1\).jpg);
+    background-size: cover;  /* Make sure the background image covers the page */
+    background-position: center;
 }
-
 
 nav {
     background-color: #333;
     padding: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    height: 60px; /* Ensure the nav has a fixed height */
+    position: relative; /* Required for z-index positioning */
 }
 
 nav ul {
@@ -30,7 +34,7 @@ nav ul li {
 }
 
 nav .logo {
-    width: 50px;
+    width: 100px;
     height: auto;
     margin-right: 20px;
 }
@@ -46,10 +50,58 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it's above the nav */
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+/* Show hamburger menu on mobile */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide menu by default */
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: #333;
+        padding: 15px 0;
+        position: absolute;
+        top: 60px; /* Position below the navbar */
+        left: 0;
+        z-index: 1000; /* Ensure menu stays below the hamburger */
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger */
+    }
+
+    nav ul.active {
+        display: flex; /* Show menu when active */
+    }
+}
+
+
 /* Main Content Layout */
 h1 {
     text-align: center;
     margin-top: 50px;
+    color: white; /* Make sure header is visible */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Add shadow for better contrast */
 }
 
 .contact-container {
@@ -60,6 +112,8 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
+    z-index: 1;
+    position: relative;
 }
 
 form label {
@@ -119,6 +173,12 @@ form button:hover {
 .social-icon:hover {
     color: #007BFF;
 }
+/* Ensure Footer Sticks to Bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 /* Footer */
 footer {
@@ -129,7 +189,24 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: auto;  /* Push footer to the bottom */
 }
+
+footer .footer-social-links {
+    margin-top: 10px;
+}
+
+footer .footer-social-links a {
+    font-size: 30px;
+    color: white;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer .footer-social-links a:hover {
+    color: #007BFF;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -142,4 +219,25 @@ footer {
     form button {
         font-size: 14px;
     }
-}
+
+        /* Logo size for large screens */
+        .logo {
+            width: 150px;  /* For desktop */
+            height: auto;
+        }
+    }
+    
+    /* Logo size for smaller screens (tablets) */
+    @media (max-width: 768px) {
+        .logo {
+            width: 120px; /* Adjust for your design */
+        }
+    }
+    
+    /* Logo size for very small screens (mobile) */
+    @media (max-width: 480px) {
+        .logo {
+            width: 100px; /* Adjust for mobile */
+        }
+    }
+
