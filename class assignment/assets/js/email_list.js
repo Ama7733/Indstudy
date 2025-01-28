@@ -62,3 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const userEntry =
         prompt ("This is a test of the prompt method", 100);
 
+        let entryA = prompt ("Enter any value", 12345.6789);
+        alert (entryA);             // displays 12345.6789
+        entryA = parseInt (entryA);
+        alert(entryA);             // displays 12345
